@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Jay R Logistics | Reliable Logistics & Transport Solutions</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+html,body{overflow-x:hidden;width:100%;}
+:root{--blue:#0A2A6B;--orange:#FF6A00;--light:#F7F9FC;--gray:#64748B;--border:#E8EEF7;}
+.container{max-width:1150px;margin:0 auto;padding:0 5%;width:100%;}
+
+/* NAVBAR WITH LOGO */
+.navbar{background:#fff;padding:10px 0;position:sticky;top:0;z-index:1000;border-bottom:1px solid #eee;width:100%;}
+.nav-flex{display:flex !important;justify-content:space-between !important;align-items:center !important;flex-wrap:nowrap;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--blue);font-size:18px;white-space:nowrap;}
+.logo img{width:42px;height:42px;object-fit:contain;border-radius:8px;background:#fff;}
+.logo span{color:var(--orange);}
+.nav-links{display:flex !important;gap:16px;list-style:none;align-items:center;overflow-x:auto;white-space:nowrap;scrollbar-width:none;}
+.nav-links::-webkit-scrollbar{display:none;}
+.nav-links li{list-style:none;flex-shrink:0;}
+.nav-links a{text-decoration:none;color:#0f172a;font-weight:700;font-size:13px;}
+.nav-links a.active{color:var(--orange);border-bottom:2px solid var(--orange);}
+.nav-links a.btn{background:var(--blue);color:#fff !important;padding:8px 16px;border-radius:999px;}
+
+/* HERO */
+.hero{padding:40px 0 50px;background:radial-gradient(circle at 20% 20%, #DBE8FF 0%, #fff 60%);}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;}
+.badge{background:#FFF0E5;color:var(--orange);padding:6px 12px;border-radius:20px;font-weight:800;font-size:10px;display:inline-block;letter-spacing:.5px;}
+.hero h1{font-size:clamp(28px,5vw,48px);font-weight:900;color:var(--blue);line-height:.95;margin:14px 0;}
+.hero h1 span{color:var(--orange);}
+.hero p{color:var(--gray);font-size:15px;margin-bottom:18px;}
+.btn{padding:11px 18px;border-radius:10px;font-weight:800;text-decoration:none;display:inline-block;background:var(--orange);color:#fff;font-size:13px;white-space:nowrap;}
+.btn-outline{background:transparent;border:2px solid var(--blue);color:var(--blue);margin-left:8px;}
+.hero-truck{background:var(--blue);border-radius:28px;padding:14px;box-shadow:14px 14px 0 var(--orange);width:100%;}
+.hero-truck img{width:100%;border-radius:16px;object-fit:cover;}
+.stats{display:flex;gap:20px;border-top:1px solid #FFD1B0;margin-top:18px;padding-top:14px;flex-wrap:wrap;}
+.stats b{display:block;color:var(--blue);font-size:18px;}
+.stats span{font-size:10px;font-weight:700;color:var(--gray);letter-spacing:1px;}
+
+/* SECTIONS */
+.section{padding:50px 0;}
+.bg-light{background:var(--light);}
+.title{text-align:left;margin-bottom:22px;}
+.title h2{font-size:clamp(22px,4vw,32px);font-weight:900;color:var(--blue);}
+.title p{color:var(--gray);font-size:14px;margin-top:4px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.card{background:#fff;padding:20px;border-radius:16px;border:1px solid var(--border);box-shadow:0 6px 20px rgba(10,42,107,.05);transition:.2s;width:100%;}
+.card:hover{transform:translateY(-3px);}
+.card h3{color:var(--blue);font-size:16px;margin:8px 0 4px;}
+.card p{color:var(--gray);font-size:13px;}
+.icon{width:44px;height:44px;background:var(--light);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;}
+.service-img{width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px;border:1px solid var(--border);}
+
+/* FOOTER */
+.footer{background:#070E24;color:#8FA0C0;width:100%;margin-top:20px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:36px 0;}
+.footer h4{color:#fff;margin-bottom:10px;font-size:14px;}
+.footer a{color:#8FA0C0;text-decoration:none;font-size:13px;display:block;margin:6px 0;}
+.footer-bottom{text-align:center;padding:16px;background:#050B1C;font-size:11px;}
+
+/* RESPONSIVE - PERFECT FIT */
+@media(max-width:860px){
+.hero-grid,.grid-3,.grid-2,.footer-grid{grid-template-columns:1fr;}
+.nav-flex{flex-direction:column;align-items:flex-start;gap:10px;}
+.nav-links{width:100%;padding-bottom:6px;}
+.hero{padding:24px 0 32px;}
+.section{padding:32px 0;}
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+<div class="container nav-flex">
+<div class="logo">
+<img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+JAY <span>R</span> LOGISTICS
+</div><ul class="nav-links">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="quote.html" class="btn">Request Quote</a></li>
+</ul>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="badge">TRUSTED LOGISTICS IN SOUTH AFRICA</span>
+<h1>Reliable <span>Logistics</span> & Transport Solutions</h1>
+<p>We provide safe, fast and professional delivery solutions for individuals, SMEs and corporate clients across South Africa.</p>
+<div>
+<a href="quote.html" class="btn">Get Free Quote →</a>
+<a href="services.html" class="btn btn-outline">Our Services</a>
+</div>
+<div class="stats">
+<div><b>100+</b><span>CLIENTS</span></div>
+<div><b>24/7</b><span>SUPPORT</span></div>
+<div><b>100%</b><span>SAFE DELIVERY</span></div>
+</div>
+</div>
+<div class="hero-truck">
+<img src="images/truck.jpeg" alt="Truck">
+</div>
+</div>
+</section>
+
+<!-- CORE SERVICES - BACK -->
+<section class="section bg-light">
+<div class="container">
+<div class="title">
+<h2>Our Core Services</h2>
+<p>Professional logistics tailored to your needs</p>
+</div>
+<div class="grid-3">
+<div class="card"><img src="images/frieght transport.jpg" class="service-img" onerror="this.style.display='none'"><div class="icon">🚛</div><h3>Freight Transport</h3><p>Long and short distance freight across all provinces.</p></div>
+<div class="card"><img src="images/last mile delivery.jpg" class="service-img" onerror="this.style.display='none'"><div class="icon">📦</div><h3>Last-Mile Delivery</h3><p>Fast last-mile delivery for retailers and e-commerce.</p></div>
+<div class="card"><img src="images/nationwide coverage.jpg" class="service-img" onerror="this.style.display='none'"><div class="icon">📍</div><h3>Nationwide Coverage</h3><p>Serving all provinces with real-time communication.</p></div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER - BACK -->
+<footer class="footer">
+<div class="container footer-grid">
+<div>
+<h4>JAY <span style="color:#FF6A00;">R</span> LOGISTICS</h4>
+<p>Your trusted logistics partner in South Africa. Safe, efficient and customer-focused transportation solutions.</p>
+<p style="margin-top:10px;">📧 info@jayrlogistics.co.za<br>📞 +27 71 293 7475</p>
+</div>
+<div>
+<h4>Quick Links</h4>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="quote.html">Request Quote</a>
+<a href="contact.html">Contact</a>
+</div>
+<footer class="footer"><div class="footer-bottom">© 2026 Jay R Logistics. All Rights Reserved.</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+</section>
+<footer class="footer">
+    <div class="footer-bottom">© 2026 Jay R Logistics</div>
+</footer>
+<script src="js/main.js"> </script>
+</html>
+
+</body>
+</html>
