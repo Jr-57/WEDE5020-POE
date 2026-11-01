@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://jayrlogistics.netlify.app/sitemap.xml
